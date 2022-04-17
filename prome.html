@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='styles.css')}}"
+    />
+    <title>Promedio</title>
+  </head>
+  <body>
+    <div class="root">
+      <h1>Promedio en todos los años de vacunación</h1>
+      <div class="btnBox">
+        <p>El promedio de inmunización es de {{porcent}}%</p>
+        <a href="/">Regresar</a>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<head>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*,*::after,*::before{
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.root{
+  min-height: 100vh;
+  background: #27292c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  
+}
+
+.root h1{
+  color: #FAF5F4;
+  text-align: center;
+}
+
+.btnBox{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 3rem;
+}

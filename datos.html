@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='styles.css')}}"
+    />
+    <title>Ultimo Datos</title>
+  </head>
+  <body>
+    <div class="root">
+      <h1>Ultimo dato actual sobre el % de vacunación</h1>
+      <div class="btnBox">
+        <p>En el pais {{pais}} el ultimo dato fue de {{data}}% en el año {{year}}
+        </p>
+        <p><a href="/">Regresar</a></p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<head>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*,*::after,*::before{
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.root{
+  min-height: 100vh;
+  background: #27292c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  
+}
+
+.root h1{
+  color: #FAF5F4;
+  text-align: center;
+}
+
+.btnBox{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 3rem;
+}
